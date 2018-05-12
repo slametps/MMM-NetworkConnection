@@ -1,0 +1,25 @@
+{
+  "name": "MMM-NetworkConnection",
+  "version": "1.0.0",
+  "description": "Display network connection test result (connection status, ping, download, upload speed)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slametps/MMM-NetworkConnection.git"
+  },
+  "keywords": [
+    "MagicMirror",
+    "NetworkConnection",
+    "network",
+    "connection",
+    "speedtest"
+  ],
+  "author": "Slamet Puji Santuso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slametps/MMM-NetworkConnection/issues"
+  },
+  "homepage": "https://github.com/slametps/MMM-NetworkConnection#readme",
+  "dependencies": {
+    "speedtest-net": ">=1.2.0"
+  }
+}

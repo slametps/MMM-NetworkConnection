@@ -1,0 +1,9 @@
+{
+	"NETCONN_CONNECTED": "Terhubung ke internet",
+	"NETCONN_NOTCONNECTED": "Tidak terhubung ke internet",
+	"NETCONN_MILLISECOND": "md",
+	"NETCONN_NA": "N/A",
+
+	"TXT_NETCONN": "NETWORK CONNECTION",
+	"TXT_NETCONN_DESC": "menampilkan status koneksi internet"
+}

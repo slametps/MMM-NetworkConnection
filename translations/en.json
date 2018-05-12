@@ -1,0 +1,9 @@
+{
+	"NETCONN_CONNECTED": "Internet is connected",
+	"NETCONN_NOTCONNECTED": "Internet is not connected",
+	"NETCONN_MILLISECOND": "ms",
+	"NETCONN_NA": "N/A",
+
+	"TXT_NETCONN": "NETWORK CONNECTION",
+	"TXT_NETCONN_DESC": "display internet connection status"
+}
