@@ -16,6 +16,7 @@ Module.register('MMM-NetworkConnection', {
     maxTime: 5 * 1000,
 		initialLoadDelay: 2.5 * 1000,
     decimal: 1,
+    displayTextStatus: true,
     language: config.language || 'en',
 	},
 
@@ -42,7 +43,7 @@ Module.register('MMM-NetworkConnection', {
     var self = this;
 
     // Set locale
-		moment.locale(self.language);
+		moment.locale(self.config.language);
 
     this.downloadSpeed = -1;
     this.uploadSpeed = -1;
@@ -72,14 +73,19 @@ Module.register('MMM-NetworkConnection', {
 
       if (connectionActive) {
         wrapper.className = 'small';
-        let s = this.translate("NETCONN_CONNECTED");
-        s += " (";
+        let s = ''
+        if (self.config.displayTextStatus) {
+          s += this.translate("NETCONN_CONNECTED");
+          s += " (";
+        }
         s += "<span class=\"fa fa-cloud\"></span> "+ (self.pingDelay > -1 ? self.pingDelay + this.translate("NETCONN_MILLISECOND") : this.translate("NETCONN_NA"));
         s += " ";
         s += "<span class=\"fa fa-download\"></span>"+ (self.downloadSpeed > -1 ? self.downloadSpeed + "Mbps" : this.translate("NETCONN_NA"));
         s += " ";
         s += "<span class=\"fa fa-upload\"></span> "+ (self.uploadSpeed > -1 ? self.uploadSpeed + "Mbps" : this.translate("NETCONN_NA"));
-        s += ")";
+        if (self.config.displayTextStatus) {
+          s += ")";
+        }
         wrapper.innerHTML = s;
       } else {
         wrapper.className = 'normal bright';

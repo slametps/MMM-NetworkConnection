@@ -35,4 +35,5 @@ This module combines [internet-monitor](https://github.com/ronny3050/internet-mo
 | `maxTime` | `5000` milliseconds | how long to do speedtest |
 | `initialLoadDelay` | `2500` milliseconds | how long to delay to load the module |
 | `decimal` | `1` | how many decimals for the round |
+| `displayTextStatus` | `true` | display connection text status or not |
 | `animationSpeed` | `2500` milliseconds | speed of the update animation |
