@@ -5,7 +5,7 @@ This module combines [internet-monitor](https://github.com/ronny3050/internet-mo
 
 ## Example
 
-![](others/MMM-NetworkConnection-screenshot-01.png)
+![](others/MMM-NetworkConnection-screenshot-01.png)	![](others/MMM-NetworkConnection-screenshot-02.png)
 
 ## Dependencies
 
