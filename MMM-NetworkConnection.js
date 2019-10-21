@@ -33,7 +33,8 @@ Module.register('MMM-NetworkConnection', {
 	getTranslations: function() {
     return {
       'en': 'translations/en.json',
-      'id': 'translations/id.json'
+      'id': 'translations/id.json',
+      'de': 'translations/de.json'
     };
 	},
 
