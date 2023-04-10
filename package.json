@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/slametps/MMM-NetworkConnection#readme",
   "dependencies": {
-    "speedtest-net": ">=1.2.0"
+    "speedtest-net": ">=2.2.0"
   }
 }
